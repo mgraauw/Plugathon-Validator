@@ -1,4 +1,9 @@
 #!/bin/bash
+
+echo "Scanning input/resources for FHIR resource"
+python createIG.py
+echo
+
 publisher_jar=publisher.jar
 input_cache_path=./input-cache/
 echo Checking internet connection...
@@ -11,8 +16,6 @@ else
 	echo "Offline"
 	txoption="-tx n/a"
 fi
-
-echo "$txoption"
 
 export JAVA_TOOL_OPTIONS="$JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8"
 
