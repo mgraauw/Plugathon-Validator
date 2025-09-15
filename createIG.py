@@ -1,10 +1,12 @@
 import json
+import uuid
 import xml.etree.ElementTree as ET
 
 from pathlib import Path
 
 FHIR_NS = "http://hl7.org/fhir"
 NS = {"f": FHIR_NS}
+ET.register_namespace("", FHIR_NS)
 
 INPUT_DIR = Path("input/resources")
 
@@ -36,6 +38,44 @@ BASE_IG = {
     }
 }
 
+def openResource(file_path):
+    resource = None
+    if len(file_path.suffixes) and file_path.suffixes[-1].lower() == ".xml":
+        tree = ET.parse(file_path)
+        resource = tree.getroot()
+    elif len(file_path.suffixes) and file_path.suffixes[-1].lower() == ".json":
+        with open(file_path) as f:
+            resource = json.load(f)
+    else:
+        print(f"Not a FHIR resource: {file_path}. Skipping")
+
+    return resource
+
+def getResourceId(resource):
+    try:
+        if isinstance(resource, ET.Element):
+            id = resource.find("f:id", NS).attrib["value"]
+        elif isinstance(resource, dict):
+            id = resource["id"]
+    except (KeyError, AttributeError):
+        return None
+
+    return id
+
+def addResourceId(resource, file_path):
+    new_id = str(uuid.uuid4())
+
+    if isinstance(resource, ET.Element):
+        id_el = ET.Element("id")
+        id_el.set("value", new_id)
+        resource.insert(0, id_el)
+        et = ET.ElementTree(resource)
+        et.write(file_path)
+    elif isinstance(resource, dict):
+        resource["id"] = new_id
+        with open(file_path, "w") as f:
+            f.write(json.dumps(resource, indent=4))
+
 def getResourceType(resource):
     if isinstance(resource, ET.Element):
         return resource.tag.replace("{" + FHIR_NS + "}", "")
@@ -45,21 +85,6 @@ def getResourceType(resource):
         else:
             raise Error("JSON resource misses the 'resourceType' key")
 
-def getResourceId(resource):
-    if isinstance(resource, ET.Element):
-        try:
-            id = resource.find("f:id", NS).attrib["value"]
-        except KeyError:
-            pass
-            # TODO: Insert back id
-    elif isinstance(resource, dict):
-        try:
-            id = resource["id"]
-        except KeyError:
-            pass
-            # TODO: Insert back id
-
-    return id
 
 def mapToProfile(resource):
     resource_type = getResourceType(resource)
@@ -79,17 +104,13 @@ if __name__ == "__main__":
     resource_id = None
 
     for file_path in INPUT_DIR.glob("*"):
-        resource = None
-        if len(file_path.suffixes) and file_path.suffixes[-1].lower() == ".xml":
-            tree = ET.parse(file_path)
-            resource = tree.getroot()
-        elif len(file_path.suffixes) and file_path.suffixes[-1].lower() == ".json":
-            with open(file_path) as f:
-                resource = json.load(f)
-        else:
-            print(f"Not a FHIR resource: {file_path}. Skipping")
+        if resource := openResource(file_path):
+            resource_id = getResourceId(resource)
+            if not resource_id:
+                print(f"Resource is missing an id, so it's added for file: {file_path}")
+                addResourceId(resource, file_path)
+                resource = openResource(file_path)
 
-        if resource:
             resource_type = None
             try:
                 resource_type = getResourceType(resource)
@@ -98,7 +119,7 @@ if __name__ == "__main__":
             profile = mapToProfile(resource)
             if not profile:
                 print(f"No profile could be matched to resource: {file_path}. Skipping")
-            resource_id = getResourceId(resource)
+            
 
             if resource_type and profile and resource_id:
                 resources.append({
