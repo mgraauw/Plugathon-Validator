@@ -1,1 +1,7 @@
 output/
+input-cache/
+temp/
+template/
+translations/
+IG_generated.json
+ig.ini
