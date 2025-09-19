@@ -8,35 +8,7 @@ FHIR_NS = "http://hl7.org/fhir"
 NS = {"f": FHIR_NS}
 ET.register_namespace("", FHIR_NS)
 
-INPUT_DIR = Path("/ig/input/resources")
-
-BASE_IG = {
-    "resourceType": "ImplementationGuide",
-    "id": "PlugathonValidationIG",
-    "url": "http://example.org/fhir/PlugathonValidationIG",
-    "version": "0.1.",
-    "name": "PlugathonValidationIG",
-    "status": "draft",
-    "experimental": True,
-    "packageId": "example.org.fhir.plugathon.validation",
-    "fhirVersion": ["4.0.1"],
-    # At the time of writing, no package has been uploaded to the package repositories
-    # "dependsOn": [
-    #     {
-    #         "packageId": "hl7.fhir.eu.eps",
-    #         "version": "0.0.1-ci"
-    #     }
-    # ],
-    "definition": {
-        "resource": None,
-        "parameter": [
-            {
-                "code": "path-pages",
-                "value": "input/pages",
-            }
-        ]
-    }
-}
+IG_DIR = Path("/ig/")
 
 def openResource(file_path):
     resource = None
@@ -103,7 +75,7 @@ if __name__ == "__main__":
     profile = None
     resource_id = None
 
-    for file_path in INPUT_DIR.glob("*"):
+    for file_path in IG_DIR.glob("input/resources/*"):
         if resource := openResource(file_path):
             resource_id = getResourceId(resource)
             if not resource_id:
@@ -129,6 +101,8 @@ if __name__ == "__main__":
                     "exampleCanonical": profile
                 })
 
-    with open(Path("/ig/input/IG.json"), "w") as f:
-        BASE_IG["definition"]["resource"] = resources
-        f.write(json.dumps(BASE_IG, sort_keys=False, indent=4))
+    with open(IG_DIR / "input/IG.json") as f:
+        base_ig = json.load(f)
+    with open(IG_DIR / "IG_generated.json", "w") as f:
+        base_ig["definition"]["resource"] = resources
+        f.write(json.dumps(base_ig, sort_keys=False, indent=4))

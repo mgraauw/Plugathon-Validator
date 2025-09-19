@@ -1,0 +1,21 @@
+{
+    "resourceType": "ImplementationGuide",
+    "id": "PlugathonValidationIG",
+    "url": "http://example.org/fhir/PlugathonValidationIG",
+    "version": "0.1.",
+    "name": "PlugathonValidationIG",
+    "status": "draft",
+    "experimental": true,
+    "packageId": "example.org.fhir.plugathon.validation",
+    "fhirVersion": [
+        "4.0.1"
+    ],
+    "definition": {
+        "parameter": [
+            {
+                "code": "path-pages",
+                "value": "input/pages"
+            }
+        ]
+    }
+}
