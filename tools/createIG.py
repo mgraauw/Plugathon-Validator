@@ -8,7 +8,7 @@ FHIR_NS = "http://hl7.org/fhir"
 NS = {"f": FHIR_NS}
 ET.register_namespace("", FHIR_NS)
 
-IG_DIR = Path("/ig/")
+IG_DIR = Path(".")
 
 def openResource(file_path):
     resource = None
