@@ -2,7 +2,11 @@ import json
 import uuid
 import xml.etree.ElementTree as ET
 
+from colorama import just_fix_windows_console
 from pathlib import Path
+from termcolor import colored
+
+just_fix_windows_console()
 
 FHIR_NS = "http://hl7.org/fhir"
 NS = {"f": FHIR_NS}
@@ -19,7 +23,7 @@ def openResource(file_path):
         with open(file_path) as f:
             resource = json.load(f)
     else:
-        print(f"Not a FHIR resource: {file_path}. Skipping")
+        print(colored(f"Not a FHIR resource: {file_path}. Skipping", "yellow"))
 
     return resource
 
@@ -79,7 +83,7 @@ if __name__ == "__main__":
         if resource := openResource(file_path):
             resource_id = getResourceId(resource)
             if not resource_id:
-                print(f"Resource is missing an id, so it's added for file: {file_path}")
+                print(colored(f"Resource is missing an id, so it's added for file: {file_path}", "yellow"))
                 addResourceId(resource, file_path)
                 resource = openResource(file_path)
 
@@ -87,11 +91,10 @@ if __name__ == "__main__":
             try:
                 resource_type = getResourceType(resource)
             except Error as e:
-                print(f"Problem parsing resource: {file_path} ({e}). Skipping")
+                print(colored(f"Problem parsing resource: {file_path} ({e}). Skipping", "red"))
             profile = mapToProfile(resource)
             if not profile:
-                print(f"No profile could be matched to resource: {file_path}. Skipping")
-            
+                print(colored(f"No profile could be matched to resource: {file_path}. Skipping", "red"))
 
             if resource_type and profile and resource_id:
                 resources.append({

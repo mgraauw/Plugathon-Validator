@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/java:21
 
 # Install system components
-RUN apt-get update && apt-get -y install build-essential jq nodejs npm ruby-full rubygems zlib1g-dev mitmproxy python3-requests wget dos2unix
+RUN apt-get update && apt-get -y install build-essential jq nodejs npm ruby-full rubygems zlib1g-dev mitmproxy python3-requests python3-termcolor wget dos2unix
 
 # Install Jekyll
 RUN gem install bundler jekyll
