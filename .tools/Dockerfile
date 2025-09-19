@@ -1,0 +1,50 @@
+FROM mcr.microsoft.com/devcontainers/java:21
+
+# Install system components
+RUN apt-get update && apt-get -y install build-essential jq nodejs npm ruby-full rubygems zlib1g-dev mitmproxy python3-requests wget dos2unix
+
+# Install Jekyll
+RUN gem install bundler jekyll
+
+# Get our tools
+RUN mkdir /tools
+RUN wget https://raw.githubusercontent.com/Nictiz/snippets/refs/heads/main/NTS-proxy/NTS-proxy.py -O /tools/NTS-proxy.py
+COPY createIG.py /tools
+RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O /tools/publisher.jar
+
+# Add mitmproxy certificate
+RUN mitmdump & sleep 2 && keytool -noprompt -importcert -alias mitmproxy -storepass changeit -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -file ~/.mitmproxy/mitmproxy-ca-cert.pem
+
+ENV PATH="${PATH}:/usr/local/lib"
+
+# Create the needed packages folder
+RUN mkdir -p /root/.fhir/packages
+
+# Create the mount point and make it a trusted to git
+RUN mkdir /ig
+RUN git config --global --add safe.directory /ig
+COPY go /tools
+COPY show /tools
+COPY tx /tools
+RUN dos2unix /tools/go
+RUN dos2unix /tools/show
+RUN dos2unix /tools/tx
+RUN chmod 755 /tools/go
+RUN chmod 755 /tools/show
+RUN chmod 755 /tools/tx
+
+RUN echo 'echo "Welcome to the Plugathon Validator container"' >> /etc/bash.bashrc
+RUN echo 'echo' >> /etc/bash.bashrc
+RUN echo 'echo "This container uses the IG Publisher as a tool for validation of resources. To use:"' >> /etc/bash.bashrc
+RUN echo 'echo "* place resources in the \"input/resources\" folder"' >> /etc/bash.bashrc
+RUN echo 'echo "* generate the IG using the \"go\" command"' >> /etc/bash.bashrc
+RUN echo 'echo "* consult the QA page of the IG using the \"show\" command"' >> /etc/bash.bashrc
+RUN echo 'echo' >> /etc/bash.bashrc
+RUN echo 'echo "Resources should be in XML or JSON format and should ideally contain a Resource.id (if not, one will be added)."' >> /etc/bash.bashrc
+RUN echo 'echo "Resources will be checked against the relevant EHDS FHIR profiles. It is not needed to set a profile declaration using meta.profile."' >> /etc/bash.bashrc
+RUN echo 'echo' >> /etc/bash.bashrc
+RUN echo 'echo "The IG Publisher can use the Nationale Terminologieserver (NTS) instead of the default FHIR terminology server if you have a login. The \"go\" command will ask you for credentials on the first run (you can always change the configuration using the \"tx\" command)."' >> /etc/bash.bashrc
+RUN echo 'echo "WARNING: If you provide a password for the NTS, it will be stored in plaintext in this container!!"' >> /etc/bash.bashrc
+
+ENV PATH="/tools:${PATH}"
+ENTRYPOINT /bin/bash

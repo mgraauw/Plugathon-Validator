@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# (Re)configure the terminology server settings and write the config to ~/.env_ig
+# If the --use-env flag is given, the script checks if a config exists and if this is the case skips further
+# configuration. Otherwise it will ask the questions to configure the tx server.
+
+if [[ $1 == "--use-env" && -f ~/.env_ig ]]; then
+	source ~/.env_ig
+fi
+
+if [[ -z "$USE_NTS" ]]; then
+	echo -n "Do you have an account for the Nationale Terminologieserver that you want to use? (y/n) "
+	read use_nts
+	if [[ $use_nts == "y" || $use_nts == "Y" ]]; then
+		USE_NTS="y"
+		echo "USE_NTS=y" > ~/.env_ig
+	else
+		USE_NTS="n"
+		echo "USE_NTS=n" > ~/.env_ig
+	fi
+
+	if [[ $use_nts = "y" ]]; then
+		echo -n "What's your username? "
+		read NTS_USER
+		echo -n "What's your password? "
+		read -s NTS_PASS
+		echo
+		echo "NTS_USER=$NTS_USER" >> ~/.env_ig
+		echo "NTS_PASS=$NTS_PASS" >> ~/.env_ig
+	fi
+fi
