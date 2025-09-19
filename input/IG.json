@@ -1,8 +1,9 @@
 {
     "resourceType": "ImplementationGuide",
-    "id": "PlugathonValidationIG",
-    "url": "http://example.org/fhir/PlugathonValidationIG",
-    "version": "0.1.",
+    "id": "example.org.fhir.plugathon.validation",
+    "language": "en-US",
+    "url": "http://example.org/fhir/PlugathonValidationIG/ImplementationGuide/example.org.fhir.plugathon.validation",
+    "version": "0.1.0",
     "name": "PlugathonValidationIG",
     "status": "draft",
     "experimental": true,
@@ -11,10 +12,26 @@
         "4.0.1"
     ],
     "definition": {
+        "page": {
+            "title": "Table of Contents",
+            "generation": "html",
+            "nameUrl": "toc.html",
+            "page": [
+                {
+                    "nameUrl": "index.html",
+                    "title": "Plugathon validation IG",
+                    "generation": "markdown"
+                }
+            ]
+        },
         "parameter": [
             {
                 "code": "path-pages",
                 "value": "input/pages"
+            },
+            {
+                "code": "i18n-default-lang",
+                "value": "nl-NL"
             }
         ]
     }

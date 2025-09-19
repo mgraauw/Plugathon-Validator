@@ -1,0 +1,4 @@
+== Suppressed Messages ==
+
+# Name is not relevant for this use case
+Unable to find ImplementationGuide.definition.resource.name%
