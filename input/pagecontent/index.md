@@ -1,1 +1,0 @@
-See the [QA results](qa.html).
