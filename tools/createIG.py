@@ -8,7 +8,7 @@ FHIR_NS = "http://hl7.org/fhir"
 NS = {"f": FHIR_NS}
 ET.register_namespace("", FHIR_NS)
 
-INPUT_DIR = Path("input/resources")
+INPUT_DIR = Path("/ig/input/resources")
 
 BASE_IG = {
     "resourceType": "ImplementationGuide",
@@ -129,6 +129,6 @@ if __name__ == "__main__":
                     "exampleCanonical": profile
                 })
 
-    with open(Path("input/IG.json"), "w") as f:
+    with open(Path("/ig/input/IG.json"), "w") as f:
         BASE_IG["definition"]["resource"] = resources
         f.write(json.dumps(BASE_IG, sort_keys=False, indent=4))

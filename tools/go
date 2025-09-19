@@ -1,17 +1,26 @@
 #!/bin/bash
 
+if [[ -z "$NTS_USER" || -z "$NTS_PASS" ]]; then
+	echo "Parameters NTS_USER and NTS_PASS should be set for using the Nationale Terminologieserver"
+	exit 1
+fi
+
 echo "Scanning input/resources for FHIR resource"
-python createIG.py
+python3 /tools/createIG.py
 echo
 
-publisher_jar=publisher.jar
-input_cache_path=./input-cache/
-echo Checking internet connection...
-curl -sSf tx.fhir.org > /dev/null
+echo "Starting proxy for the Nationale Terminologieserver"
+mitmdump -s /tools/NTS-proxy.py > /dev/null &
+proxy_process=$!
+sleep 2s
 
+publisher_jar=publisher.jar
+input_cache_path=/tools/
+echo Checking internet connection...
+curl -sSf --proxy http://localhost:8080 http://terminologieserver.nl/fhir/metadata > /dev/null
 if [ $? -eq 0 ]; then
-	echo "Online"
-	txoption=""
+	echo "Using the Nationale Terminologieserver"
+	txoption="-proxy localhost:8080 -tx http://terminologieserver.nl/fhir"
 else
 	echo "Offline"
 	txoption="-tx n/a"
@@ -31,3 +40,5 @@ else
 		echo IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 	fi
 fi
+
+kill $proxy_process
