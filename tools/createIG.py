@@ -106,3 +106,10 @@ if __name__ == "__main__":
     with open(IG_DIR / "IG_generated.json", "w") as f:
         base_ig["definition"]["resource"] = resources
         f.write(json.dumps(base_ig, sort_keys=False, indent=4))
+
+    ini_path = IG_DIR / "ig.ini"
+    if not ini_path.exists():
+        with open(ini_path, "w") as f:
+            f.write("[IG]\n")
+            f.write("ig = IG_generated.json\n")
+            f.write("template = fhir.base.template#current\n")

@@ -25,7 +25,6 @@ RUN mkdir /ig
 RUN git config --global --add safe.directory /ig
 COPY go /tools
 RUN chmod 755 /tools/go
-COPY ig.ini /ig
 
 ENV PATH="/tools:${PATH}"
 WORKDIR "/ig"
