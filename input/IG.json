@@ -11,6 +11,13 @@
     "fhirVersion": [
         "4.0.1"
     ],
+    "dependsOn": [
+        {
+            "uri": "http://hl7.eu/fhir/eps/ImplementationGuide/hl7.fhir.eu.eps",
+            "packageId": "hl7.fhir.eu.eps",
+            "version": "0.0.1-ci"
+        }
+    ],
     "definition": {
         "page": {
             "title": "Table of Contents",
