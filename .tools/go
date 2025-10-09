@@ -1,5 +1,12 @@
 #!/bin/bash
 
+if [ -z "$1" ]; then
+  echo "Error: Missing required parameter ig"
+  echo "Usage: $0 [core|eps|medication|lab|hdr]"
+  exit 1
+fi
+ig="$1"
+
 tx --use-env
 
 if [[ -f ~/.env_ig ]]; then
@@ -34,7 +41,7 @@ else
 fi
 
 echo "Scanning input/resources for FHIR resource"
-python3 /tools/createIG.py
+python3 /tools/createIG.py --ig $ig
 echo
 
 publisher_jar=publisher.jar
