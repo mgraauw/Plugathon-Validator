@@ -1,7 +1,7 @@
 # Tooling plugathon
 ## Introduction
 
-EHDS requirements regarding the FHIR implementations are published in the form of FHIR profiles. Profiles are a mechanisme to describe, in a structured way, what the requirements are, and to automatically validate if an resource (a FHIR instance) actually conforms to the stated requirements.
+EHDS requirements regarding the FHIR implementations are published in the form of FHIR profiles. Profiles are a mechanism to describe, in a structured way, what the requirements are, and to automatically validate if a resource (a FHIR instance) actually conforms to the stated requirements.
 
 The plugathon is aimed at producing FHIR resources that conform to the EHDS profiles. As such, profile validation plays an important role.
 
