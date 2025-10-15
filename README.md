@@ -42,10 +42,11 @@ To use the Github Codespace option, you need to be able to create a git reposito
 
 To use:
 
-1. Fork the repository at [TODO].
+1. Fork the repository at <https://github.com/Nictiz/Plugathon-Validator> using the "fork" button in the upper right corner. *Note*: forking is not the same as cloning, [see the documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
 2. Synchronize this fork to your computer using your favorite git client.
 3. Go to the Github page for your repository and find the green "Code" button. Click it and select the "Codespaces" tab. Click the "+" button.<br>The codespace is now being set up for the first time. This will take quite a bit of time as all the required tooling is installed. Subsequent runs will be faster.
-4. After some time, you will have Visual Studio Code running in your browser. On the left side you'll see the folder structure from your repository. If you want, you can open files here for editing. You also have access to a git client here to pull changes from your local computer.<br>In the lower half you'll also see a terminal window.
+4. After some time, you will have Visual Studio Code running in your browser. On the left side you'll see the folder structure from your repository. If you want, you can open files here for editing. You also have access to a git client here to pull changes from your local computer.
+5. In the lower half you'll also see a terminal window. From here on, continue with [the section on using the tool](#Using-the-tool).
 
 ### Local Docker container
 
@@ -56,13 +57,16 @@ This option bundles all required software in a lightweight virtual machine that 
 * If you know what you're doing, a bare-bones container engine without desktop GUI can be used.
 
 To use:
-1. Clone the repository at [TODO] to your computer.
+1. Clone the repository at <https://github.com/Nictiz/Plugathon-Validator> to your computer.
 2. Run the script `init-container.bat` or `init-container.sh`/<br>The image will now be built. This will take quite a bit of time as all the required tooling is installed. It only needs to be done once.
 3. When done, run the `start-container.bat` or `start-container.sh` script.
+4. From here on, continue with [the section on using the tool](#Using-the-tool).
 
 ### Using the tool
 
-The Docker container provides a Linux environment with the toolchain for using the HL7 IG Publisher in combination with the Nationale Terminologieserver (it deviates slightly from a standard IG Publishing environment to facilitate profile matching and using the NTS). It is used from the command line, and the resulting QA report is presented in the web browser.
+To access the tool, first start a local Docker container or a Github Codespace. Once you started one of these options, you're in a Linux terminal environment. The validation tooling will be run from this environment. The resulting QA report is presented in the web browser.
+
+This environment is based on the HL7 IG Publisher in combination with the Nationale Terminologieserver (it deviates slightly from a standard IG Publishing environment to facilitate profile matching and using the NTS).
 
 1. To validate resources, create a "resources" subfolder of the "input" folder and place resources here.
     * Resources ideally contain a `Resource.id` as this is needed for the IG Publishing process. If this is missing, a `Resource.id` will be added.
@@ -77,8 +81,8 @@ The Docker container provides a Linux environment with the toolchain for using t
 4. On the first run, the tool will ask if you want to use the Nationale Terminologieserver (NTS), and if so, what your username and password are. If you don't use the NTS, the default FHIR terminology server will be used.<p>WARNING: your username and password will be stored in plaintext in the container!
 5. Building the IG takes some time.
 6. When the build has finished:
-    * When using the Codespace, run `serve` to serve the created IG. A popup will appear allowing you to open the result in your browser. From here, you can navigate to the QA page.
-    * When using the local Docker container, you can run `serve` and navigate to <http://localhost:8080>. Alternatively, you can double click the "qa.html" page in the "output" folder on your computer.
+    * When using the Codespace, run `show` to serve the created IG. A popup will appear allowing you to open the result in your browser. From here, you can navigate to the QA page.
+    * When using the local Docker container, you can run `show` and navigate to <http://localhost:4000>. Alternatively, you can double click the "qa.html" page in the "output" folder on your computer.
     * Press Ctrl + C to stop serving the IG.
 7. To re-validate, put the changed resources in the "resources" subfolder and repeat these steps.
 
@@ -87,3 +91,18 @@ The Docker container provides a Linux environment with the toolchain for using t
 By default, the IG Publisher uses the publicly available `tx.fhir.org` terminology server for validation. This server offers limited support for Dutch translations (and is a bit unstable). As an alternative, the Nationale Terminologieserver may be used. However, this server requires a user account, and in addition, requires that the available code systems are accessible to that account. See https://nictiz.nl/wat-we-doen/activiteiten/terminologie/de-nationale-terminologieserver/ for more information.
 
 When the tool is run for the first time, it will ask you for credentials for the Nationale Terminologieserver. Subsequent runs will re-use the choice you made here. If you want to change this, you can run the `tx` command.
+
+### Adding extra package dependencies
+
+The tooling will set package dependencies for the use case chosen using het `go` command. For example, if use case `eps` is chosen, the package dependency on the European Patient Summary IG will be set. However, your FHIR instances might have additional dependencies. These can be added to the file "input/IG.json", using the `dependsOn` key.
+
+For example, to add a dependency on the nl-core package, expand `dependsOn` to:
+
+```json
+    "dependsOn": [
+        {
+            "packageId": "nictiz.fhir.nl.r4.nl-core",
+            "version": "0.12.0-beta.4"
+        }
+    ],
+```

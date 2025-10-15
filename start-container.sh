@@ -1,5 +1,4 @@
 #!/bin/bash
-
 set -euo pipefail
 
 # Try to find Docker or Podman
