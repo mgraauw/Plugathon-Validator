@@ -1,5 +1,6 @@
 # Tooling plugathon
-## Introduction
+## 1 Introduction
+### 1.1 General introduction
 
 EHDS requirements regarding the FHIR implementations are published in the form of FHIR profiles. Profiles are a mechanism to describe, in a structured way, what the requirements are, and to automatically validate if a resource (a FHIR instance) actually conforms to the stated requirements.
 
@@ -7,7 +8,7 @@ The plugathon is aimed at producing FHIR resources that conform to the EHDS prof
 
 There are many tools available for FHIR validation (see [here](https://confluence.hl7.org/spaces/FHIR/pages/35718864/Profile+Tooling) and [here](https://confluence.hl7.org/spaces/FHIR/pages/35718869/Testing+Platforms)). For those who aren't experienced with using such tools, we prepared a tool setup based on the IG Publisher by HL7.
 
-### Requirements
+### 1.2 Requirements
 
 * A laptop with the software needed for developing your application
 * Either
@@ -17,7 +18,7 @@ There are many tools available for FHIR validation (see [here](https://confluenc
 * Basic knowledge on using the command line.
 * Recommended: an account on the Nationale Terminologieserver, with additional access to SNOMED and LOINC. See the manual [in English](https://nictiz.nl/publicaties/national-terminology-server-manual-for-new-users/) or [Dutch](https://nictiz.nl/publicaties/nationale-terminologie-server-handleiding-voor-nieuwe-gebruikers/).
 
-## Using the validation tooling
+## 2 Using the validation tooling
 
 There are two options:
 
@@ -32,7 +33,7 @@ There are two options:
     * Requirements: Docker Desktop or similar on your computer (Docker Desktop is recommended if you have little prior experience with containers). No additional software is needed.
     * Optionally: an account on the Nationale Terminologieserver to check Dutch terms.
 
-### Github Codespace
+### 2.1 Github Codespace
 
 To use the Github Codespace option, you need to be able to create a git repository on Github and be able to synchronize with it.
 
@@ -48,7 +49,7 @@ To use:
 4. After some time, you will have Visual Studio Code running in your browser. On the left side you'll see the folder structure from your repository. If you want, you can open files here for editing. You also have access to a git client here to pull changes from your local computer.
 5. In the lower half you'll also see a terminal window. From here on, continue with [the section on using the tool](#Using-the-tool).
 
-### Local Docker container
+### 2.2 Local Docker container
 
 This option bundles all required software in a lightweight virtual machine that can be run from your computer. To use it, you need to have an engine that can run Docker containers.
 
@@ -62,7 +63,7 @@ To use:
 3. When done, run the `start-container.bat` or `start-container.sh` script.
 4. From here on, continue with [the section on using the tool](#Using-the-tool).
 
-### Using the tool
+### 2.3 Using the tool
 
 To access the tool, first start a local Docker container or a Github Codespace. Once you started one of these options, you're in a Linux terminal environment. The validation tooling will be run from this environment. The resulting QA report is presented in the web browser.
 
@@ -86,13 +87,13 @@ This environment is based on the HL7 IG Publisher in combination with the Nation
     * Press Ctrl + C to stop serving the IG.
 7. To re-validate, put the changed resources in the "resources" subfolder and repeat these steps.
 
-### Using the Nationale Terminologieserver
+### 2.5 Using the Nationale Terminologieserver
 
 By default, the IG Publisher uses the publicly available `tx.fhir.org` terminology server for validation. This server offers limited support for Dutch translations (and is a bit unstable). As an alternative, the Nationale Terminologieserver may be used. However, this server requires a user account, and in addition, requires that the available code systems are accessible to that account. See https://nictiz.nl/wat-we-doen/activiteiten/terminologie/de-nationale-terminologieserver/ for more information.
 
 When the tool is run for the first time, it will ask you for credentials for the Nationale Terminologieserver. Subsequent runs will re-use the choice you made here. If you want to change this, you can run the `tx` command.
 
-### Adding extra package dependencies
+### 2.6 Adding extra package dependencies
 
 The tooling will set package dependencies for the use case chosen using het `go` command. For example, if use case `eps` is chosen, the package dependency on the European Patient Summary IG will be set. However, your FHIR instances might have additional dependencies. These can be added to the file "input/IG.json", using the `dependsOn` key.
 
