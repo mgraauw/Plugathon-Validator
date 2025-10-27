@@ -47,9 +47,8 @@ for pkg in /var/lib/.fhir/packages/*; do
         pkg_name=$(basename "$pkg")
         dest_pkg="$HOME/.fhir/packages/$pkg_name"
 
-        # Check if destination directory exists
         if [ ! -d "$dest_pkg" ]; then
-            ln -s "$pkg" "$dest_pkg"
+            cp -r "$pkg" "$dest_pkg" # Copying, because symlinking seems to confuse the Validator
         fi
     fi
 done
