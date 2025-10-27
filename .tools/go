@@ -45,7 +45,7 @@ mkdir -p ~/.fhir/packages
 for pkg in /var/lib/.fhir/packages/*; do
     if [ -d "$pkg" ]; then # Only process directories
         pkg_name=$(basename "$pkg")
-        dest_pkg="~/.fhir/packages/$pkg_name"
+        dest_pkg="$HOME/.fhir/packages/$pkg_name"
 
         # Check if destination directory exists
         if [ ! -d "$dest_pkg" ]; then
