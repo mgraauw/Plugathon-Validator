@@ -19,7 +19,7 @@ if [[ $USE_NTS == "y" ]]; then
 	export NTS_PASS
 	mitmdump -s /tools/NTS-proxy.py > /dev/null &
 	proxy_process=$!
-	sleep 2s
+	sleep 3s
 	curl_line="--proxy http://localhost:8080 http://terminologieserver.nl/fhir/metadata"
 else
 	curl_line="https://tx.fhir.org"
