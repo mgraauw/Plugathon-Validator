@@ -24,6 +24,20 @@ if not exist "%OUTPUT_DIR%" (
     mkdir "%OUTPUT_DIR%"
 )
 
+REM Check if container exists
+%CONTAINER_ENGINE% container inspect plugathon-validator >nul 2>&1
+if %errorlevel% == 0 (
+    echo Deleting old container
+    %CONTAINER_ENGINE% container rm plugathon-validator >nul 2>&1
+)
+
+REM Check if image exists
+%CONTAINER_ENGINE% image inspect plugathon-validator >nul 2>&1
+if %errorlevel% == 0 (
+    echo Deleting old image
+    %CONTAINER_ENGINE% rmi plugathon-validator >nul 2>&1
+)
+
 %CONTAINER_ENGINE% build -t plugathon-validator .tools
 %CONTAINER_ENGINE% container create -it --name plugathon-validator --volume ./input:/ig/input --volume ./output:/ig/output -p 4000:4000 --workdir /ig plugathon-validator
 
