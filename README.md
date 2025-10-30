@@ -102,6 +102,7 @@ For example, to add a dependency on the nl-core package, expand `dependsOn` to:
 ```json
     "dependsOn": [
         {
+            "uri": "http://nictiz.nl/fhir",
             "packageId": "nictiz.fhir.nl.r4.nl-core",
             "version": "0.12.0-beta.4"
         }
