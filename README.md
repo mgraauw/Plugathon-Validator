@@ -107,3 +107,9 @@ For example, to add a dependency on the nl-core package, expand `dependsOn` to:
         }
     ],
 ```
+
+### 2.7 Suppressing errors
+
+The IG Publisher has an option to [suppress messages in the QA report](https://confluence.hl7.org/spaces/FHIR/pages/66938614/Implementation+Guide+Parameters#ImplementationGuideParameters-ManagingWarningsandHints). This is useful for errors and warnings that cannot be fixed at the moment and can help you to focus on the messages that are actually relevant.
+
+To do so, open the file "input/ignoreWarnings.txt". Messages to be suppressed are grouped using header line, which starts by a `#` and describes the reason to suppress the message. Beneath this line, add the messages to suppress. The "%" wildcard can be used at the start and end of a line. 
