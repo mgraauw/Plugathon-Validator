@@ -107,3 +107,11 @@ For example, to add a dependency on the nl-core package, expand `dependsOn` to:
         }
     ],
 ```
+
+## European specifications
+
+The various HL7 Europe specifications can be found here: https://hl7.eu/fhir/
+
+The latest ePS (European Patient Summary) is at: https://build.fhir.org/ig/hl7-eu/eps/. This Implementation Guide is the best starting point to study the ePS specs.
+
+For those interested, there is a Github repo: https://github.com/hl7-eu/eps - normally this is not needed to validate your own resources.
