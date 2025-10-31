@@ -1,4 +1,9 @@
-output/
+output/**
+# Uncomment one ore more of the following lines if you want to commit your QA reports in git
+#!output/qa.html
+#!output/qa.txt
+#!output/qa.xml
+
 input-cache/
 temp/
 template/

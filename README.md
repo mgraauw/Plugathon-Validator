@@ -106,9 +106,32 @@ By default, the IG Publisher uses the publicly available `tx.fhir.org` terminolo
 
 When the tool is run for the first time, it will ask you for credentials for the Nationale Terminologieserver. Subsequent runs will re-use the choice you made here. If you want to change this, you can run the `tx` command.
 
-### 2.6 Adding extra package dependencies
+## 3 FAQ
+### 3.1 How do I add resources to validate?
+All resources to validate should be placed in the folder "input/resources".
 
-The tooling will set package dependencies for the use case chosen using het `go` command. For example, if use case `eps` is chosen, the package dependency on the European Patient Summary IG will be set. However, your FHIR instances might have additional dependencies. These can be added to the file "input/IG.json", using the `dependsOn` key.
+If you're using a local Docker installation, you can simply put them there and run the `go` command.
+
+If you're using a codespace, there are multiple ways:
+* The easiest way is to drag-and-drop resource from you development computer to the folder in your codespace.
+* Alternatively, you may use the built-in git client to synchronize from checked-in files. Please be aware that the codespace acts as just another client; to load files in your codespace, you would need to push from you local computer to Github first, and then pull from Github to your codespace.
+
+### 3.2 Do I need to state the profile to use in `Resource.meta.profile`?
+It is not necessary to state the profile to validate against in your resources. When running the `go` command, a script is executed to match resources to the relevant profiles for the specified IG.
+
+FHIR profiles are used to define the rules and restrictions for a resource in a particular use case. As a resource may be usable in several distinct use cases, there is no tight binding between a resource and a profile, so it's normally not necessary for a resource to indicate the profile or profiles it conforms to.
+
+If you want, you may specify (all the) profile(s) your resources conform to using the `Resource.meta.profile` tag as a hint to validation tooling. If this tag is present, the IG Publisher will pick it up.
+
+### 3.3 Why does the tool change my resource?
+For the IG Publisher to work properly, a `Resource.id` is necessary in each resource to check. For this reason it will be added if it is absent.
+
+Please note that in most use cases, adding a `Resource.id` is required.
+
+### 3.4 Can I add extra package dependencies?
+The tooling will set package dependencies for the use case chosen using het `go` command. For example, if use case `eps` is chosen, the package dependency on the European Patient Summary IG will be set.
+
+If your FHIR instances have additional dependencies, you can add them to the file "input/IG.json", using the `dependsOn` key.
 
 For example, to add a dependency on the nl-core package, expand `dependsOn` to:
 
@@ -122,8 +145,27 @@ For example, to add a dependency on the nl-core package, expand `dependsOn` to:
     ],
 ```
 
-### 2.7 Suppressing errors
-
+### 3.5 Can I suppress warnings and errors?
 The IG Publisher has an option to [suppress messages in the QA report](https://confluence.hl7.org/spaces/FHIR/pages/66938614/Implementation+Guide+Parameters#ImplementationGuideParameters-ManagingWarningsandHints). This is useful for errors and warnings that cannot be fixed at the moment and can help you to focus on the messages that are actually relevant.
 
-To do so, open the file "input/ignoreWarnings.txt". Messages to be suppressed are grouped using header line, which starts by a `#` and describes the reason to suppress the message. Beneath this line, add the messages to suppress. The "%" wildcard can be used at the start and end of a line. 
+To do so, open the file "input/ignoreWarnings.txt". Messages to be suppressed are grouped using header line, which starts by a `#` and describes the reason to suppress the message. Beneath this line, add the messages to suppress. The "%" wildcard can be used at the start and end of a line.
+
+### 3.6 When using the Nationale Terminologieserver, why do I get a message that no terminology server is used?
+This seems to happen sometimes on the first run, it's a bug in our tool setup. Please re-run the `go` command.
+
+### 3.7 Can I switch between the default terminology server and the Nationale Terminologieserver?
+You can setup you terminology server preferences using the `tx` command. However, the IG Publisher caches terminology server calls between runs. When switching, you might want to delete the "input-cache/txcache" folder.
+
+### 3.8 Can I save QA reports?
+The IG Publisher generates QA reports in different formats in the "output" folder:
+
+* qa.html -- human readable version.
+* qa.txt -- human readable version in flat text.
+* qa.xml -- machine readable version in OperationOutcome format.
+
+If you want to keep these reports for later reference, you can simple save the files you're interested in (for the HTML version, it might be a good idea to save it as a "complete web page" from your browser to include all images etc.).
+
+You can also leverage git to commit the QA reports together with the input resources. To do so, open the ".gitignore" file and uncomment the relevant line(s) to include the QA reports in git.
+
+### 3.9 How can I change the language to use for resource checking?
+The IG Publisher will try to determine the language for each resource based on the the [`Resource.language` tag](https://www.hl7.org/fhir/R4/resource-definitions.html#Resource.language) and the default language specified using the `i18n-default-lang` parameter indicated in "IG.json" (currently set to _nl-NL_).
