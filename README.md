@@ -18,6 +18,19 @@ There are many tools available for FHIR validation (see [here](https://confluenc
 * Basic knowledge on using the command line.
 * Recommended: an account on the Nationale Terminologieserver, with additional access to SNOMED and LOINC. See the manual [in English](https://nictiz.nl/publicaties/national-terminology-server-manual-for-new-users/) or [Dutch](https://nictiz.nl/publicaties/nationale-terminologie-server-handleiding-voor-nieuwe-gebruikers/).
 
+### 1.3 European specifications
+
+This tool set has the following European specifications pre-loaded:
+
+* [Europe Patient Summary](https://build.fhir.org/ig/hl7-eu/eps/)
+* [Europe Medication Prescription and Dispense](https://hl7.eu/fhir/mpd/)
+* [Europe Base and Core FHIR](https://hl7.eu/fhir/base/)
+* [Europe Laboratory Report](https://hl7.eu/fhir/laboratory/)
+* [Europe Hospital Discharge Report](https://hl7.eu/fhir/hdr/)
+* [Europe Base and Core FHIR IG](https://hl7.eu/fhir/base/)
+
+An overview of the various HL7 Europe specifications can be found here: https://hl7.eu/fhir/
+
 ## 2 Using the validation tooling
 
 There are two options:
