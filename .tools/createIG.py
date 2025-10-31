@@ -175,6 +175,8 @@ def getCodings(resource, element_name):
         elements = resource.findall(f"./f:{element_name}[f:coding]", NS)
     elif isinstance(resource, dict):
         elements = resource.get(element_name)
+        if not isinstance(elements, list):
+            elements = [elements]
 
     codings = []
     for element in elements:
