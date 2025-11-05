@@ -17,12 +17,14 @@ RUN mkdir -p /root/.fhir/packages
 # Create the mount point and make it a trusted to git
 RUN mkdir /ig
 RUN git config --global --add safe.directory /ig
+COPY plugathon.template /ig/plugathon.template
 
 # Install our tools
 RUN mkdir /tools
 RUN wget https://raw.githubusercontent.com/Nictiz/snippets/refs/heads/main/NTS-proxy/NTS-proxy.py -O /tools/NTS-proxy.py
 RUN wget https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -O /tools/publisher.jar
 COPY createIG.py /tools
+COPY rewriteTxQa.py /tools
 COPY go /tools
 COPY show /tools
 COPY tx /tools

@@ -86,6 +86,8 @@ else
 	fi
 fi
 
+python3 /tools/rewriteTxQa.py
+
 if [[ $USE_NTS == "y" ]]; then
 	kill $proxy_process
 fi
