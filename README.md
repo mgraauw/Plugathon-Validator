@@ -31,6 +31,8 @@ This tool set has the following European specifications pre-loaded:
 
 An overview of the various HL7 Europe specifications can be found here: https://hl7.eu/fhir/
 
+For a detailed overview see: [The European Patient Summary](eps.MD).
+
 ## 2 Using the validation tooling
 
 There are two options:
