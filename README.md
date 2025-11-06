@@ -171,3 +171,15 @@ You can also leverage git to commit the QA reports together with the input resou
 
 ### 3.9 How can I change the language to use for resource checking?
 The IG Publisher will try to determine the language for each resource based on the the [`Resource.language` tag](https://www.hl7.org/fhir/R4/resource-definitions.html#Resource.language) and the default language specified using the `i18n-default-lang` parameter indicated in "IG.json" (currently set to _nl-NL_).
+
+### 3.10 Can I still use this tool when the plugathon is over?
+This repo is a simple wrapper around the [FHIR IG Publisher]((https://confluence.hl7.org/spaces/FHIR/pages/35718627/IG+Publisher+Documentation)), which is very actively maintained by HL7. The IG Publisher can be a bit overwhelming to set up, so we created this wrapper for the single purpose to quickly start validating using the EHDS specs. It will still be available after the plugathon, but there are no plans to actively maintain it.
+
+Please note that there are many ways to do profile validation in FHIR, which might better suit your purpose. Options include:
+
+- Software libraries which allow you to build in profile validation in your application.
+- Command line tools which can be used stand-alone or built into a development pipeline.
+- FHIR servers can perform profile validation when asked to.
+- FHIR specific development platforms that offer this functionality out of the box.
+
+HL7 [maintains a Confluence page](https://confluence.hl7.org/spaces/FHIR/pages/35718864/Profile+Tooling) with pointers to implementations. Also see [this ticket](https://nictiz.atlassian.net/browse/MM-1690). 
