@@ -300,4 +300,4 @@ if __name__ == "__main__":
         with open(ini_path, "w") as f:
             f.write("[IG]\n")
             f.write("ig = IG_generated.json\n")
-            f.write("template = fhir.base.template#current\n")
+            f.write("template = #plugathon.template\n")

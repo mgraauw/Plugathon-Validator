@@ -1,4 +1,8 @@
 == Suppressed Messages ==
 
-# Name is not relevant for this use case
+# Name and description are not relevant for this use case
 Unable to find ImplementationGuide.definition.resource.name%
+Unable to find ImplementationGuide.definition.resource.description%
+
+# The IG is not meant for publishing
+The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
