@@ -6,3 +6,10 @@ Unable to find ImplementationGuide.definition.resource.description%
 
 # The IG is not meant for publishing
 The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+De url zou direct naar de ImplementationGuide resource moeten wijzen (bijv. met '/ImplementationGuide/')
+
+# Accolades bij {stuk} negeren
+Unknown code '{stuk}' in the CodeSystem 'http://unitsofmeasure.org' version%
+
+# G-standaard zit niet in NTS
+Geen van de gevonden codings bestaan in waardelijst 'ProductCodeCodelijsten'%

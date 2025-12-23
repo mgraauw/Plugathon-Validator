@@ -13,7 +13,7 @@
                 "resourceType": "Composition",
                 "text": {
                     "status": "generated",
-                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h1>Allergies and Intolerances</h1><div><div><table class=\"hapiPropertyTable\"><caption>Allergies And Intolerances</caption><thead><tr><th>Allergen</th><th>Status</th><th>Category</th><th>Reaction</th><th>Severity</th><th>Comments</th><th>Onset</th></tr></thead><tbody><tr id=\"AllergyIntolerance-urn:uuid:e17c514e-39bd-4c68-8855-15dbde9b4dda\"><td> Penicilline </td><td> active </td><td> MEDICATION </td><td> rode huiduitslag op armen </td><td> moderate </td><td> test toelichting </td><td>Sun Jan 01 00:00:00 UTC 1995</td></tr></tbody></table></div></div></div><div><h1>Medication List</h1><div><div><table class=\"hapiPropertyTable\"><caption>Medication Summary: Medication Requests</caption><thead><tr><th>Medication</th><th>Status</th><th>Route</th><th>Sig</th><th>Comments</th><th>Authored Date</th></tr></thead><tbody><tr id=\"MedicationRequest-urn:uuid:77060f8e-f9c4-46ac-b38d-013a0ee7c79b\"><td> METOCLOPRAMIDE 20MG ZETPIL </td><td>Unknown</td><td></td><td></td><td></td><td>Mon Jul 13 00:00:00 UTC 2015</td></tr><tr id=\"MedicationRequest-urn:uuid:e7e226ab-a314-4549-98ed-17226429653a\"><td> LISINOPRIL 10MG TABLET </td><td>Unknown</td><td></td><td></td><td></td><td>Thu Sep 08 16:00:00 UTC 2016</td></tr><tr id=\"MedicationRequest-urn:uuid:736814d8-13ff-4db9-8067-374897f666d4\"><td> METHOTREXAAT INJVLST 15MG/0,6ML(25MG/ML) WWSP PA </td><td>Unknown</td><td></td><td></td><td></td><td>Sun Mar 06 08:12:30 UTC 2016</td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Medication Summary: Medication Statements</caption><thead><tr><th>Medication</th><th>Status</th><th>Route</th><th>Sig</th><th>Date</th></tr></thead><tbody><tr id=\"MedicationStatement-urn:uuid:6ee27f10-9b93-4945-ab48-0b6b350b7fa6\"><td> PANTOPRAZOL 40MG INJPDR </td><td>Active</td><td></td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Problem List</h1><div><div><table class=\"hapiPropertyTable\"><caption>Problem List</caption><thead><tr><th>Medical Problems</th><th>Status</th><th>Comments</th><th>Onset Date</th></tr></thead><tbody><tr id=\"Condition-urn:uuid:f7ed7eba-2ea0-41ae-8694-f9a6553d7341\"><td> amyotrofische laterale sclerose </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:52a8bf68-bc86-4ae8-8b06-be7624acc0fc\"><td> vasculaire dementie </td><td> active </td><td> De laatste weken erg onrustig in de nacht </td><td></td></tr><tr id=\"Condition-urn:uuid:75dfb4bd-de11-407c-981a-c080c17bbcbc\"><td> Hartfalen </td><td> active </td><td> Houdt veel vocht vast, kortademig </td><td></td></tr><tr id=\"Condition-urn:uuid:6c1339e5-a0e6-43f6-92d7-243aa115cf6e\"><td> Geneesmiddel-interacties </td><td> active </td><td> Huiduitslag met veel jeuk door medicatie </td><td></td></tr><tr id=\"Condition-urn:uuid:f1090b81-407d-4f6b-8b9a-2b1bc831e615\"><td> Voogdij </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:390299fc-d0f2-4495-8056-94806ef7a1c4\"><td> Multiple sclerose </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:52b8f9e5-325a-4e43-8da3-8a62b78f2082\"><td> Presbyacusis </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:72e4fd1c-7107-40b2-83c8-ee8aeaade778\"><td> Paroxismaal boezemfibrilleren </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:f69cb50b-949b-4e1e-8ed9-921c43c20f57\"><td> abnormaal gewichtsverlies </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:68ed18a3-b397-48a9-bfe8-38f9b478a1cb\"><td> bevinding betreffende zwangerschap </td><td> active </td><td> Mevrouw is vaak misselijk in de ochtend. </td><td></td></tr><tr id=\"Condition-urn:uuid:3c824526-ba3c-4143-a111-f3180f221657\"><td> Artrose </td><td> active </td><td> Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie. </td><td></td></tr><tr id=\"Condition-urn:uuid:9f026824-d458-498a-b7cd-7e993313af6f\"><td> eindstandig colostoma </td><td> active </td><td> Pati\u00c3\u00abnt heeft veel last van dit type stoma. </td><td> Wed Jan 01 00:00:00 UTC 2014 </td></tr></tbody></table></div></div></div><div><h1>History of Procedures</h1><div><div><table class=\"hapiPropertyTable\"><caption>History Of Procedures</caption><thead><tr><th>Procedure</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Procedure-urn:uuid:512c598d-e307-49a1-a925-e26bb8f73574\"><td> Placing restraint using limb restraint </td><td></td><td> Wed May 01 00:00:00 UTC 2019-Sun May 05 00:00:00 UTC 2019 </td></tr><tr id=\"Procedure-urn:uuid:0f058d2d-3973-4978-9bc8-de2d93afee7b\"><td> implantatie van totale knieprothese </td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Medical Devices</h1><div><div><table class=\"hapiPropertyTable\"><caption>Medical Devices</caption><thead><tr><th>Device</th><th>Status</th><th>Comments</th><th>Date Recorded</th></tr></thead><tbody><tr id=\"DeviceUseStatement-urn:uuid:d03690aa-bf1f-4014-a2ad-77fc75e3d353\"><td> elektrisch scheerapparaat </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:16d2d5fe-f335-4e43-a5de-c0dba103dfd7\"><td> rolstoel </td><td>ACTIVE</td><td> Kan korte afstanden lopen </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:b4aa041b-f7a9-4750-9d40-c73ea64d1cbf\"><td> gehoorapparaat </td><td>COMPLETED</td><td> Apparaat niet zichtbaar (diep in de gehooringang) </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:2c3fa822-2e94-4f51-b0c9-a9a3e4130eaf\"><td> pacemaker </td><td>ACTIVE</td><td> Laatst doorgemeten in 2011 </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:4703ea1a-85ea-4bac-bdb3-ff56d2c3d18c\"><td> Rollator </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:54cabb2e-2450-4c8a-a7a4-876148474d55\"><td></td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:c1753fb9-3c52-4832-9703-bf63cd354733\"><td> Stomazak </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:68475b83-0f0f-4f36-aee4-10e051102134\"><td> Enkelfocale leesbril </td><td>ACTIVE</td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Diagnostic Results</h1><div><div><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Observations</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Reference Range</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:9ed67282-f280-4934-962e-9ed0c58f4e63\"><td> Sodium [Moles/volume] in Blood </td><td> 138 </td><td> mmol/l </td><td></td><td> 136-146 </td><td></td><td> Sat Jun 12 11:15:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:2edf3d94-9920-4abf-b7df-2b8190f8166c\"><td> Hepatitis A virus IgM Ab [Presence] in Serum </td><td> hepatitis A-test negatief </td><td></td><td></td><td></td><td></td><td> Mon Jan 16 10:12:00 UTC 2012 </td></tr><tr id=\"Observation-urn:uuid:57b274ee-17f0-4372-8178-40be89367266\"><td> Hemoglobine </td><td> 11.5 </td><td> mmol/l </td><td> Onder referentiebereik </td><td> 12.0-16.0 </td><td></td><td> Sun Jan 02 11:00:00 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:2758d846-642d-4abb-9abb-fb969a3e3ee5\"><td> Hematocriet </td><td> 45 </td><td> % </td><td></td><td> 39-51 </td><td></td><td> Sun Jan 02 11:00:02 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:9c4c4010-43d8-4e0c-9b28-945e6ea210b1\"><td> hemoglobine &amp; hematocriet panel </td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Diagnostic Reports</caption><thead><tr><th>Code</th><th>Date</th></tr></thead><tbody></tbody></table></div></div></div><div><h1>Vital Signs</h1><div><div><table class=\"hapiPropertyTable\"><caption>Vital Signs</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:f21c46fb-6456-43ed-8af0-c0397905dfe7\"><td> Blood pressure panel with all children optional </td><td></td><td></td><td></td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:300bc6ac-43ef-48ca-99c8-250d9d4adbe0\"><td> Body height </td><td> 153 </td><td> cm </td><td> Met schoenen aan </td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:80d300fc-c5fc-4788-ba49-c836ee976fef\"><td> Body temperature <br/> Tympanische temperatuur </td><td> 38.6 </td><td> Cel </td><td> Voeten voelen heel koud aan </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:12494e2d-05b1-4041-953e-8924793ab5be\"><td> Body weight </td><td> 2400 </td><td> gram </td><td> Luier woog 320 gram </td><td> Wed Feb 06 00:00:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:c6e48794-94a8-400e-8041-8122ad512ff0\"><td> Head Occipital-frontal circumference </td><td> 41 </td><td> cm </td><td> Gemeten bij 3 maanden </td><td> Tue Jun 22 00:00:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:7c78abd3-59b1-40c2-a653-7e663ccf8f27\"><td> Heart rate </td><td> 126 </td><td> /min </td><td> Misschien bigeminie? </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:e64760dc-668a-4fea-8a3c-f19fc02116f0\"><td> Oxygen saturation in Arterial blood <br/> Oxygen saturation in Arterial blood by Pulse oximetry </td><td> 92 </td><td> % </td><td> Stijgt snel bij aanspreken </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:49c9d30b-b934-446a-a073-ca05224221cb\"><td> Heart rate Peripheral artery by palpation </td><td> 50 </td><td> /min </td><td> Sportvrouw </td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr></tbody></table></div></div></div><div><h1>History of Past Illness</h1><div></div></div><div><h1>Advance Directives</h1><div><div><table class=\"hapiPropertyTable\"><caption>Advance Directives</caption><thead><tr><th>Scope</th><th>Status</th><th>Action Controlled</th><th>Date</th></tr></thead><tbody><tr id=\"Consent-urn:uuid:f5215ac3-cc5a-45b4-8ecd-ab6f23c8e3f6\"><td> Advanced Care Directive </td><td>Active</td><td></td><td>Mon Aug 15 00:00:00 UTC 2011</td></tr><tr id=\"Consent-urn:uuid:7a26a4ba-63e3-43f8-bd13-29cb8c995bac\"><td> Advanced Care Directive </td><td>Active</td><td></td><td>Thu May 06 00:00:00 UTC 2010</td></tr></tbody></table></div></div></div></div>"
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div><h1>Allergies and Intolerances</h1><div><div><table class=\"hapiPropertyTable\"><caption>Allergies And Intolerances</caption><thead><tr><th>Allergen</th><th>Status</th><th>Category</th><th>Reaction</th><th>Severity</th><th>Comments</th><th>Onset</th></tr></thead><tbody><tr id=\"AllergyIntolerance-urn:uuid:e17c514e-39bd-4c68-8855-15dbde9b4dda\"><td> penicilline </td><td> active </td><td> MEDICATION </td><td> rode huiduitslag op armen </td><td> moderate </td><td> test toelichting </td><td>Sun Jan 01 00:00:00 UTC 1995</td></tr></tbody></table></div></div></div><div><h1>Medication List</h1><div><div><table class=\"hapiPropertyTable\"><caption>Medication Summary: Medication Requests</caption><thead><tr><th>Medication</th><th>Status</th><th>Route</th><th>Sig</th><th>Comments</th><th>Authored Date</th></tr></thead><tbody><tr id=\"MedicationRequest-urn:uuid:77060f8e-f9c4-46ac-b38d-013a0ee7c79b\"><td> METOCLOPRAMIDE 20MG ZETPIL </td><td>Unknown</td><td></td><td></td><td></td><td>Mon Jul 13 00:00:00 UTC 2015</td></tr><tr id=\"MedicationRequest-urn:uuid:e7e226ab-a314-4549-98ed-17226429653a\"><td> LISINOPRIL 10MG TABLET </td><td>Unknown</td><td></td><td></td><td></td><td>Thu Sep 08 16:00:00 UTC 2016</td></tr><tr id=\"MedicationRequest-urn:uuid:736814d8-13ff-4db9-8067-374897f666d4\"><td> METHOTREXAAT INJVLST 15MG/0,6ML(25MG/ML) WWSP PA </td><td>Unknown</td><td></td><td></td><td></td><td>Sun Mar 06 08:12:30 UTC 2016</td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Medication Summary: Medication Statements</caption><thead><tr><th>Medication</th><th>Status</th><th>Route</th><th>Sig</th><th>Date</th></tr></thead><tbody><tr id=\"MedicationStatement-urn:uuid:6ee27f10-9b93-4945-ab48-0b6b350b7fa6\"><td> PANTOPRAZOL 40MG INJPDR </td><td>Active</td><td></td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Problem List</h1><div><div><table class=\"hapiPropertyTable\"><caption>Problem List</caption><thead><tr><th>Medical Problems</th><th>Status</th><th>Comments</th><th>Onset Date</th></tr></thead><tbody><tr id=\"Condition-urn:uuid:f7ed7eba-2ea0-41ae-8694-f9a6553d7341\"><td> amyotrofische laterale sclerose </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:52a8bf68-bc86-4ae8-8b06-be7624acc0fc\"><td> vasculaire dementie </td><td> active </td><td> De laatste weken erg onrustig in de nacht </td><td></td></tr><tr id=\"Condition-urn:uuid:75dfb4bd-de11-407c-981a-c080c17bbcbc\"><td> Hartfalen </td><td> active </td><td> Houdt veel vocht vast, kortademig </td><td></td></tr><tr id=\"Condition-urn:uuid:6c1339e5-a0e6-43f6-92d7-243aa115cf6e\"><td> Geneesmiddel-interacties </td><td> active </td><td> Huiduitslag met veel jeuk door medicatie </td><td></td></tr><tr id=\"Condition-urn:uuid:f1090b81-407d-4f6b-8b9a-2b1bc831e615\"><td> Voogdij </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:390299fc-d0f2-4495-8056-94806ef7a1c4\"><td> Multiple sclerose </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:52b8f9e5-325a-4e43-8da3-8a62b78f2082\"><td> Presbyacusis </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:72e4fd1c-7107-40b2-83c8-ee8aeaade778\"><td> Paroxismaal boezemfibrilleren </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:f69cb50b-949b-4e1e-8ed9-921c43c20f57\"><td> abnormaal gewichtsverlies </td><td> active </td><td></td><td></td></tr><tr id=\"Condition-urn:uuid:68ed18a3-b397-48a9-bfe8-38f9b478a1cb\"><td> bevinding betreffende zwangerschap </td><td> active </td><td> Mevrouw is vaak misselijk in de ochtend. </td><td></td></tr><tr id=\"Condition-urn:uuid:3c824526-ba3c-4143-a111-f3180f221657\"><td> Artrose </td><td> active </td><td> Beperking bij het bewegen van het gewricht, drukpijn door slijtage van twee compartimenten van de linker knie. </td><td></td></tr><tr id=\"Condition-urn:uuid:9f026824-d458-498a-b7cd-7e993313af6f\"><td> eindstandig colostoma </td><td> active </td><td> Pati\u00c3\u00abnt heeft veel last van dit type stoma. </td><td> Wed Jan 01 00:00:00 UTC 2014 </td></tr></tbody></table></div></div></div><div><h1>History of Procedures</h1><div><div><table class=\"hapiPropertyTable\"><caption>History Of Procedures</caption><thead><tr><th>Procedure</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Procedure-urn:uuid:512c598d-e307-49a1-a925-e26bb8f73574\"><td> Placing restraint using limb restraint </td><td></td><td> Wed May 01 00:00:00 UTC 2019-Sun May 05 00:00:00 UTC 2019 </td></tr><tr id=\"Procedure-urn:uuid:0f058d2d-3973-4978-9bc8-de2d93afee7b\"><td> implantatie van totale knieprothese </td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Medical Devices</h1><div><div><table class=\"hapiPropertyTable\"><caption>Medical Devices</caption><thead><tr><th>Device</th><th>Status</th><th>Comments</th><th>Date Recorded</th></tr></thead><tbody><tr id=\"DeviceUseStatement-urn:uuid:d03690aa-bf1f-4014-a2ad-77fc75e3d353\"><td> elektrisch scheerapparaat </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:16d2d5fe-f335-4e43-a5de-c0dba103dfd7\"><td> rolstoel </td><td>ACTIVE</td><td> Kan korte afstanden lopen </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:b4aa041b-f7a9-4750-9d40-c73ea64d1cbf\"><td> gehoorapparaat </td><td>COMPLETED</td><td> Apparaat niet zichtbaar (diep in de gehooringang) </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:2c3fa822-2e94-4f51-b0c9-a9a3e4130eaf\"><td> pacemaker </td><td>ACTIVE</td><td> Laatst doorgemeten in 2011 </td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:4703ea1a-85ea-4bac-bdb3-ff56d2c3d18c\"><td> Rollator </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:54cabb2e-2450-4c8a-a7a4-876148474d55\"><td></td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:c1753fb9-3c52-4832-9703-bf63cd354733\"><td> Stomazak </td><td>ACTIVE</td><td></td><td></td></tr><tr id=\"DeviceUseStatement-urn:uuid:68475b83-0f0f-4f36-aee4-10e051102134\"><td> Enkelfocale leesbril </td><td>ACTIVE</td><td></td><td></td></tr></tbody></table></div></div></div><div><h1>Diagnostic Results</h1><div><div><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Observations</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Reference Range</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:9ed67282-f280-4934-962e-9ed0c58f4e63\"><td> Sodium [Moles/volume] in Blood </td><td> 138 </td><td> mmol/L </td><td></td><td> 136-146 </td><td></td><td> Sat Jun 12 11:15:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:2edf3d94-9920-4abf-b7df-2b8190f8166c\"><td> Hepatitis A virus IgM Ab [Presence] in Serum </td><td> hepatitis A-test negatief </td><td></td><td></td><td></td><td></td><td> Mon Jan 16 10:12:00 UTC 2012 </td></tr><tr id=\"Observation-urn:uuid:57b274ee-17f0-4372-8178-40be89367266\"><td> Hemoglobine </td><td> 11.5 </td><td> mmol/L </td><td> Onder referentiebereik </td><td> 12.0-16.0 </td><td></td><td> Sun Jan 02 11:00:00 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:2758d846-642d-4abb-9abb-fb969a3e3ee5\"><td> Hematocriet </td><td> 45 </td><td> % </td><td></td><td> 39-51 </td><td></td><td> Sun Jan 02 11:00:02 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:9c4c4010-43d8-4e0c-9b28-945e6ea210b1\"><td> hemoglobine &amp; hematocriet panel </td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Diagnostic Reports</caption><thead><tr><th>Code</th><th>Date</th></tr></thead><tbody></tbody></table></div></div></div><div><h1>Vital Signs</h1><div><div><table class=\"hapiPropertyTable\"><caption>Vital Signs</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:f21c46fb-6456-43ed-8af0-c0397905dfe7\"><td> Blood pressure panel with all children optional </td><td></td><td></td><td></td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:300bc6ac-43ef-48ca-99c8-250d9d4adbe0\"><td> Body height </td><td> 153 </td><td> cm </td><td> Met schoenen aan </td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:80d300fc-c5fc-4788-ba49-c836ee976fef\"><td> Body temperature <br/> Tympanische temperatuur </td><td> 38.6 </td><td> Cel </td><td> Voeten voelen heel koud aan </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:12494e2d-05b1-4041-953e-8924793ab5be\"><td> Body weight </td><td> 2400 </td><td> gram </td><td> Luier woog 320 gram </td><td> Wed Feb 06 00:00:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:c6e48794-94a8-400e-8041-8122ad512ff0\"><td> Head Occipital-frontal circumference </td><td> 41 </td><td> cm </td><td> Gemeten bij 3 maanden </td><td> Tue Jun 22 00:00:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:7c78abd3-59b1-40c2-a653-7e663ccf8f27\"><td> Heart rate </td><td> 126 </td><td> /min </td><td> Misschien bigeminie? </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:e64760dc-668a-4fea-8a3c-f19fc02116f0\"><td> Oxygen saturation in Arterial blood <br/> Oxygen saturation in Arterial blood by Pulse oximetry </td><td> 92 </td><td> % </td><td> Stijgt snel bij aanspreken </td><td> Fri Feb 08 04:43:00 UTC 2013 </td></tr><tr id=\"Observation-urn:uuid:49c9d30b-b934-446a-a073-ca05224221cb\"><td> Heart rate Peripheral artery by palpation </td><td> 50 </td><td> /min </td><td> Sportvrouw </td><td> Fri Feb 08 05:43:00 UTC 2013 </td></tr></tbody></table></div></div></div><div><h1>History of Past Illness</h1><div></div></div><div><h1>Advance Directives</h1><div><div><table class=\"hapiPropertyTable\"><caption>Advance Directives</caption><thead><tr><th>Scope</th><th>Status</th><th>Action Controlled</th><th>Date</th></tr></thead><tbody><tr id=\"Consent-urn:uuid:f5215ac3-cc5a-45b4-8ecd-ab6f23c8e3f6\"><td> Advanced Care Directive </td><td>Active</td><td></td><td>Mon Aug 15 00:00:00 UTC 2011</td></tr><tr id=\"Consent-urn:uuid:7a26a4ba-63e3-43f8-bd13-29cb8c995bac\"><td> Advanced Care Directive </td><td>Active</td><td></td><td>Thu May 06 00:00:00 UTC 2010</td></tr></tbody></table></div></div></div></div>"
                 },
                 "status": "final",
                 "type": {
@@ -21,7 +21,7 @@
                         {
                             "system": "http://loinc.org",
                             "code": "60591-5",
-                            "display": "Patient Summary Document"
+                            "display": "Patiënt samenvatting [bevinding] (document)"
                         }
                     ]
                 },
@@ -44,13 +44,13 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "48765-2",
-                                    "display": "Allergies and adverse reactions Document"
+                                    "display": "Allergieën en/of allergische reacties [bevinding] (document)"
                                 }
                             ]
                         },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><caption>Allergies And Intolerances</caption><thead><tr><th>Allergen</th><th>Status</th><th>Category</th><th>Reaction</th><th>Severity</th><th>Comments</th><th>Onset</th></tr></thead><tbody><tr id=\"AllergyIntolerance-urn:uuid:e17c514e-39bd-4c68-8855-15dbde9b4dda\"><td> Penicilline </td><td> active </td><td> MEDICATION </td><td> rode huiduitslag op armen </td><td> moderate </td><td> test toelichting </td><td>Sun Jan 01 00:00:00 UTC 1995</td></tr></tbody></table></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><caption>Allergies And Intolerances</caption><thead><tr><th>Allergen</th><th>Status</th><th>Category</th><th>Reaction</th><th>Severity</th><th>Comments</th><th>Onset</th></tr></thead><tbody><tr id=\"AllergyIntolerance-urn:uuid:e17c514e-39bd-4c68-8855-15dbde9b4dda\"><td> penicilline </td><td> active </td><td> MEDICATION </td><td> rode huiduitslag op armen </td><td> moderate </td><td> test toelichting </td><td>Sun Jan 01 00:00:00 UTC 1995</td></tr></tbody></table></div>"
                         },
                         "entry": [
                             {
@@ -65,7 +65,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "10160-0",
-                                    "display": "History of Medication use Narrative"
+                                    "display": "Medicijngebruik [voorgeschiedenis] (tekstueel)"
                                 }
                             ]
                         },
@@ -95,7 +95,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "11450-4",
-                                    "display": "Problem list - Reported"
+                                    "display": "Probleemlijst [bevinding] d.m.v. rapportage"
                                 }
                             ]
                         },
@@ -149,7 +149,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "47519-4",
-                                    "display": "History of Procedures Document"
+                                    "display": "Voorgeschiedenis met verrichtingen [bevinding] in {instelling} d.m.v. {rol} (document)"
                                 }
                             ]
                         },
@@ -173,7 +173,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "46264-8",
-                                    "display": "History of medical device use"
+                                    "display": "Voorgeschiedenis van gebruik van hulpmiddel [bevinding] in {instelling} d.m.v. {rol} (document)"
                                 }
                             ]
                         },
@@ -215,13 +215,13 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "30954-2",
-                                    "display": "Relevant diagnostic tests/laboratory data Narrative"
+                                    "display": "Relevante diagnostische tests en/of laboratoriumgegevens [bevinding] (tekstueel)"
                                 }
                             ]
                         },
                         "text": {
                             "status": "generated",
-                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Observations</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Reference Range</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:9ed67282-f280-4934-962e-9ed0c58f4e63\"><td> Sodium [Moles/volume] in Blood </td><td> 138 </td><td> mmol/l </td><td></td><td> 136-146 </td><td></td><td> Sat Jun 12 11:15:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:2edf3d94-9920-4abf-b7df-2b8190f8166c\"><td> Hepatitis A virus IgM Ab [Presence] in Serum </td><td> hepatitis A-test negatief </td><td></td><td></td><td></td><td></td><td> Mon Jan 16 10:12:00 UTC 2012 </td></tr><tr id=\"Observation-urn:uuid:57b274ee-17f0-4372-8178-40be89367266\"><td> Hemoglobine </td><td> 11.5 </td><td> mmol/l </td><td> Onder referentiebereik </td><td> 12.0-16.0 </td><td></td><td> Sun Jan 02 11:00:00 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:2758d846-642d-4abb-9abb-fb969a3e3ee5\"><td> Hematocriet </td><td> 45 </td><td> % </td><td></td><td> 39-51 </td><td></td><td> Sun Jan 02 11:00:02 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:9c4c4010-43d8-4e0c-9b28-945e6ea210b1\"><td> hemoglobine &amp; hematocriet panel </td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Diagnostic Reports</caption><thead><tr><th>Code</th><th>Date</th></tr></thead><tbody></tbody></table></div>"
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Observations</caption><thead><tr><th>Code</th><th>Result</th><th>Unit</th><th>Interpretation</th><th>Reference Range</th><th>Comments</th><th>Date</th></tr></thead><tbody><tr id=\"Observation-urn:uuid:9ed67282-f280-4934-962e-9ed0c58f4e63\"><td> Sodium [Moles/volume] in Blood </td><td> 138 </td><td> mmol/L </td><td></td><td> 136-146 </td><td></td><td> Sat Jun 12 11:15:00 UTC 2021 </td></tr><tr id=\"Observation-urn:uuid:2edf3d94-9920-4abf-b7df-2b8190f8166c\"><td> Hepatitis A virus IgM Ab [Presence] in Serum </td><td> hepatitis A-test negatief </td><td></td><td></td><td></td><td></td><td> Mon Jan 16 10:12:00 UTC 2012 </td></tr><tr id=\"Observation-urn:uuid:57b274ee-17f0-4372-8178-40be89367266\"><td> Hemoglobine </td><td> 11.5 </td><td> mmol/L </td><td> Onder referentiebereik </td><td> 12.0-16.0 </td><td></td><td> Sun Jan 02 11:00:00 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:2758d846-642d-4abb-9abb-fb969a3e3ee5\"><td> Hematocriet </td><td> 45 </td><td> % </td><td></td><td> 39-51 </td><td></td><td> Sun Jan 02 11:00:02 UTC 2022 </td></tr><tr id=\"Observation-urn:uuid:9c4c4010-43d8-4e0c-9b28-945e6ea210b1\"><td> hemoglobine &amp; hematocriet panel </td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table><table class=\"hapiPropertyTable\"><caption>Diagnostic Results: Diagnostic Reports</caption><thead><tr><th>Code</th><th>Date</th></tr></thead><tbody></tbody></table></div>"
                         },
                         "entry": [
                             {
@@ -248,7 +248,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "8716-3",
-                                    "display": "Vital signs"
+                                    "display": "Vitale functies [bevinding] d.m.v. observatie (tekstueel)"
                                 }
                             ]
                         },
@@ -290,12 +290,13 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "11348-0",
-                                    "display": "History of Past illness Narrative"
+                                    "display": "Ziektegeschiedenis [voorgeschiedenis] (tekstueel)"
                                 }
                             ]
                         },
                         "text": {
-                            "status": "generated"
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">TODO probleemlijst.</div>"
                         },
                         "entry": [
                             {
@@ -319,7 +320,7 @@
                                 {
                                     "system": "http://loinc.org",
                                     "code": "42348-3",
-                                    "display": "Advance directives"
+                                    "display": "Wilsverklaring [bevinding] in {instelling} d.m.v. {rol} (document)"
                                 }
                             ]
                         },
@@ -453,7 +454,7 @@
                                             {
                                                 "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
                                                 "code": "MC",
-                                                "display": "Mobile Phone"
+                                                "display": "mobile contact"
                                             }
                                         ]
                                     }
@@ -645,7 +646,7 @@
                                                     {
                                                         "system": "http://terminology.hl7.org/CodeSystem/v3-AddressUse",
                                                         "code": "MC",
-                                                        "display": "Mobile Phone"
+                                                        "display": "mobile contact"
                                                     }
                                                 ]
                                             }
@@ -811,12 +812,6 @@
                     "lastUpdated": "2023-09-11T21:20:31.983+00:00",
                     "source": "#Y0JCfUMYOcjxIAUp"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#AllergyIntolerance-urn:uuid:e17c514e-39bd-4c68-8855-15dbde9b4dda"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -839,7 +834,7 @@
                                         {
                                             "system": "http://snomed.info/sct",
                                             "code": "419511003",
-                                            "display": "Neiging tot ongewenste reactie op geneesmiddel"
+                                            "display": "neiging tot ongewenste reactie op medicatie en/of drug"
                                         }
                                     ]
                                 }
@@ -857,7 +852,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "24484000",
-                                        "display": "Ernstig"
+                                        "display": "ernstig"
                                     }
                                 ]
                             }
@@ -869,7 +864,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "764146007",
-                            "display": "Penicilline"
+                            "display": "penicilline"
                         }
                     ]
                 },
@@ -892,7 +887,7 @@
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "764146007",
-                                    "display": "Penicilline"
+                                    "display": "penicilline"
                                 }
                             ]
                         },
@@ -902,7 +897,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "271807003",
-                                        "display": "Exantheem"
+                                        "display": "eruptie van huid"
                                     }
                                 ]
                             }
@@ -932,12 +927,8 @@
                         "valueString": "Vanaf 1 september 2012 gedurende 5 dagen 1x per dag om 8uur 40 mg (=1 st)"
                     },
                     {
-                        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-MedicationUse2.AsAgreedIndicator",
+                        "url": "http://nictiz.nl/fhir/StructureDefinition/ext-AsAgreedIndicator",
                         "valueBoolean": true
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#MedicationStatement-urn:uuid:6ee27f10-9b93-4945-ab48-0b6b350b7fa6"
                     }
                 ],
                 "status": "active",
@@ -1040,16 +1031,12 @@
                         "valueCodeableConcept": {
                             "coding": [
                                 {
-                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.3.2051",
+                                    "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.20.77.5.2.14.2051",
                                     "code": "1",
                                     "display": "Spoed"
                                 }
                             ]
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#MedicationRequest-urn:uuid:77060f8e-f9c4-46ac-b38d-013a0ee7c79b"
                     }
                 ],
                 "status": "unknown",
@@ -1060,7 +1047,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "52711000146108",
-                                "display": "verstrekkingsverzoek"
+                                "display": "verzoek om medicatie aan patiënt te verstrekken"
                             }
                         ]
                     }
@@ -1108,7 +1095,7 @@
                         "value": 40,
                         "unit": "stuks",
                         "system": "http://unitsofmeasure.org",
-                        "code": "{stuks}"
+                        "code": "{stuk}"
                     }
                 }
             }
@@ -1136,10 +1123,6 @@
                             "start": "2016-09-08",
                             "end": "2016-09-18"
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#MedicationRequest-urn:uuid:e7e226ab-a314-4549-98ed-17226429653a"
                     }
                 ],
                 "modifierExtension": [
@@ -1150,7 +1133,7 @@
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "113381000146106",
-                                    "display": "Drug therapy definitively stopped (finding)"
+                                    "display": "tijdelijk gestopt met medicatie"
                                 }
                             ]
                         }
@@ -1190,7 +1173,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "58848006",
-                                "display": "Gebrek aan geneesmiddeleffect"
+                                "display": "gebrek aan geneesmiddeleffect"
                             }
                         ]
                     }
@@ -1246,10 +1229,6 @@
                         "valuePeriod": {
                             "start": "2016-03-06"
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#MedicationRequest-urn:uuid:736814d8-13ff-4db9-8067-374897f666d4"
                     }
                 ],
                 "status": "unknown",
@@ -1286,7 +1265,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "266709005",
-                                "display": "Medicatie gestart"
+                                "display": "medicatie gestart"
                             }
                         ]
                     }
@@ -1416,12 +1395,6 @@
                     "lastUpdated": "2023-09-29T09:38:07.240+00:00",
                     "source": "#JXAlfDpiqmq7q6Sw"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:f7ed7eba-2ea0-41ae-8694-f9a6553d7341"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1456,12 +1429,6 @@
                     "lastUpdated": "2023-09-29T09:38:08.238+00:00",
                     "source": "#mwzf9NVRWJiXHymE"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:52a8bf68-bc86-4ae8-8b06-be7624acc0fc"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1512,12 +1479,6 @@
                     "lastUpdated": "2023-09-29T09:38:09.240+00:00",
                     "source": "#1BnbHO4IqSa2t0bL"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:75dfb4bd-de11-407c-981a-c080c17bbcbc"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1543,7 +1504,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "195111005",
-                            "display": "Hartfalen"
+                            "display": "hartdecompensatie"
                         }
                     ]
                 },
@@ -1568,12 +1529,6 @@
                     "lastUpdated": "2023-09-29T09:38:10.237+00:00",
                     "source": "#0CBlr5UV2LNz5qeZ"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:6c1339e5-a0e6-43f6-92d7-243aa115cf6e"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1599,7 +1554,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "62014003",
-                            "display": "Geneesmiddel-interacties"
+                            "display": "ongewenste reactie op medicatie en/of drugs"
                         }
                     ]
                 },
@@ -1624,12 +1579,6 @@
                     "lastUpdated": "2023-09-29T09:38:11.238+00:00",
                     "source": "#1bYj2j6hCbSBEtuC"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:f1090b81-407d-4f6b-8b9a-2b1bc831e615"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1675,12 +1624,6 @@
                     "lastUpdated": "2023-09-29T09:38:14.238+00:00",
                     "source": "#AldZOBwj0iLfUcHI"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:390299fc-d0f2-4495-8056-94806ef7a1c4"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1715,12 +1658,6 @@
                     "lastUpdated": "2023-09-29T09:38:15.240+00:00",
                     "source": "#lTX0UdziMZdohJsv"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:52b8f9e5-325a-4e43-8da3-8a62b78f2082"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1755,12 +1692,6 @@
                     "lastUpdated": "2023-09-29T09:38:16.239+00:00",
                     "source": "#vsHXMk6Nqc7QlZOE"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:72e4fd1c-7107-40b2-83c8-ee8aeaade778"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1795,12 +1726,6 @@
                     "lastUpdated": "2023-09-29T09:38:17.237+00:00",
                     "source": "#k9m5Pn2GyH8avmtI"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:f69cb50b-949b-4e1e-8ed9-921c43c20f57"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1835,12 +1760,6 @@
                     "lastUpdated": "2023-09-29T09:38:18.239+00:00",
                     "source": "#7LE5dHaTZ6AlyAU4"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:68ed18a3-b397-48a9-bfe8-38f9b478a1cb"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1880,12 +1799,6 @@
                     "lastUpdated": "2023-09-29T09:38:19.238+00:00",
                     "source": "#hFis8NgNyRG90Iiu"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:3c824526-ba3c-4143-a111-f3180f221657"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1900,7 +1813,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "396275006",
-                            "display": "Artrose"
+                            "display": "artrose"
                         }
                     ]
                 },
@@ -1925,12 +1838,6 @@
                     "lastUpdated": "2023-09-29T09:38:22.239+00:00",
                     "source": "#AgdCG9UTyVIVA37z"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:9f026824-d458-498a-b7cd-7e993313af6f"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -1980,7 +1887,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "27033000",
-                                "display": "onderbuik"
+                                "display": "structuur van onderste gedeelte van abdomen"
                             }
                         ]
                     }
@@ -2028,14 +1935,10 @@
                                 {
                                     "system": "urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.6.1",
                                     "code": "2",
-                                    "display": "Instemming pati\u00c3\u00abnt"
+                                    "display": "Instemming patiënt"
                                 }
                             ]
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Procedure-urn:uuid:512c598d-e307-49a1-a925-e26bb8f73574"
                     }
                 ],
                 "status": "completed",
@@ -2053,7 +1956,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "123941000146105",
-                            "display": "Placing restraint using limb restraint"
+                            "display": "mechanische fixatie met arm- en beenspalk"
                         }
                     ]
                 },
@@ -2072,7 +1975,7 @@
                             {
                                 "system": "http://snomed.info/sct",
                                 "code": "121491000146107",
-                                "display": "Diversion of crisis situation"
+                                "display": "afwenden van crisissituatie"
                             }
                         ]
                     }
@@ -2095,12 +1998,6 @@
                     "lastUpdated": "2023-09-11T21:20:44.981+00:00",
                     "source": "#iLk4i3wkzz3KhRNz"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Procedure-urn:uuid:0f058d2d-3973-4978-9bc8-de2d93afee7b"
-                    }
-                ],
                 "status": "unknown",
                 "code": {
                     "coding": [
@@ -2133,12 +2030,6 @@
                     "lastUpdated": "2023-09-11T21:03:06.319+00:00",
                     "source": "#NhnS5l8YhE4izC0R"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:d03690aa-bf1f-4014-a2ad-77fc75e3d353"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2170,12 +2061,6 @@
                     "lastUpdated": "2023-09-11T21:03:08.318+00:00",
                     "source": "#sLXp33f24rYA2RlP"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:16d2d5fe-f335-4e43-a5de-c0dba103dfd7"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2220,10 +2105,6 @@
                             "type": "Location",
                             "display": "Healthcare provider (location), St. Franciscus Gasthuis"
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:b4aa041b-f7a9-4750-9d40-c73ea64d1cbf"
                     }
                 ],
                 "status": "completed",
@@ -2257,7 +2138,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "24028007",
-                                        "display": "Rechts"
+                                        "display": "rechts"
                                     }
                                 ]
                             }
@@ -2267,7 +2148,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "117590005",
-                            "display": "Oor"
+                            "display": "structuur van oor"
                         }
                     ]
                 },
@@ -2301,10 +2182,6 @@
                             "type": "Location",
                             "display": "Healthcare provider (location), Academisch Medisch Centrum"
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:2c3fa822-2e94-4f51-b0c9-a9a3e4130eaf"
                     }
                 ],
                 "status": "active",
@@ -2336,7 +2213,7 @@
                                     {
                                         "system": "http://snomed.info/sct",
                                         "code": "7771000",
-                                        "display": "Links"
+                                        "display": "links"
                                     }
                                 ]
                             }
@@ -2346,7 +2223,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "9454009",
-                            "display": "subclavian pouch"
+                            "display": "structuur van vena subclavia"
                         }
                     ]
                 },
@@ -2366,12 +2243,6 @@
                     "lastUpdated": "2023-09-11T21:03:11.316+00:00",
                     "source": "#ysgZNvbiHWeQeIsy"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:4703ea1a-85ea-4bac-bdb3-ff56d2c3d18c"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2399,12 +2270,6 @@
                     "lastUpdated": "2023-09-11T21:03:12.316+00:00",
                     "source": "#TeW46GML8WZ8EDxI"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:54cabb2e-2450-4c8a-a7a4-876148474d55"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2427,12 +2292,6 @@
                     "lastUpdated": "2023-09-11T21:03:13.316+00:00",
                     "source": "#s2NyRkxrFhqp9f1y"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:c1753fb9-3c52-4832-9703-bf63cd354733"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2461,12 +2320,6 @@
                     "lastUpdated": "2023-09-11T21:03:14.316+00:00",
                     "source": "#m9XLO8d0IrELSnnv"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#DeviceUseStatement-urn:uuid:68475b83-0f0f-4f36-aee4-10e051102134"
-                    }
-                ],
                 "status": "active",
                 "subject": {
                     "reference": "urn:uuid:ef6cc702-d429-4994-b4af-30784e422f1a",
@@ -2500,7 +2353,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "416789009",
-                            "display": "Stomazak"
+                            "display": "stomazak"
                         }
                     ]
                 },
@@ -2525,7 +2378,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "423013001",
-                            "display": "Enkelfocale leesbril"
+                            "display": "enkelfocale leesbril"
                         }
                     ]
                 },
@@ -2555,7 +2408,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "404946006",
-                            "display": "Rollator"
+                            "display": "looprek met wielen"
                         }
                     ]
                 },
@@ -2767,12 +2620,6 @@
                     "lastUpdated": "2023-09-11T21:01:21.377+00:00",
                     "source": "#0gPm5xVlIVu6QlEm"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:9ed67282-f280-4934-962e-9ed0c58f4e63"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -2811,9 +2658,9 @@
                 "effectiveDateTime": "2021-06-12T13:15:00+02:00",
                 "valueQuantity": {
                     "value": 138,
-                    "unit": "mmol/l",
+                    "unit": "mmol/L",
                     "system": "http://unitsofmeasure.org",
-                    "code": "mmol/l"
+                    "code": "mmol/L"
                 },
                 "specimen": {
                     "type": "Specimen",
@@ -2823,15 +2670,15 @@
                     {
                         "low": {
                             "value": 136,
-                            "unit": "mmol/l",
+                            "unit": "mmol/L",
                             "system": "http://unitsofmeasure.org",
-                            "code": "mmol/l"
+                            "code": "mmol/L"
                         },
                         "high": {
                             "value": 146,
-                            "unit": "mmol/l",
+                            "unit": "mmol/L",
                             "system": "http://unitsofmeasure.org",
-                            "code": "mmol/l"
+                            "code": "mmol/L"
                         }
                     }
                 ]
@@ -2846,12 +2693,6 @@
                     "lastUpdated": "2023-09-11T21:01:23.376+00:00",
                     "source": "#yZJJLs1hYA0OEgkM"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:2edf3d94-9920-4abf-b7df-2b8190f8166c"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -2912,12 +2753,6 @@
                     "lastUpdated": "2023-09-11T21:01:25.376+00:00",
                     "source": "#6mZnMh1hI8qDNUQ7"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:57b274ee-17f0-4372-8178-40be89367266"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -2956,9 +2791,9 @@
                 "effectiveDateTime": "2022-01-02T12:00:00+01:00",
                 "valueQuantity": {
                     "value": 11.5,
-                    "unit": "mmol/l",
+                    "unit": "mmol/L",
                     "system": "http://unitsofmeasure.org",
-                    "code": "mmol/l"
+                    "code": "mmol/L"
                 },
                 "interpretation": [
                     {
@@ -2979,15 +2814,15 @@
                     {
                         "low": {
                             "value": 12.0,
-                            "unit": "mmol/l",
+                            "unit": "mmol/L",
                             "system": "http://unitsofmeasure.org",
-                            "code": "mmol/l"
+                            "code": "mmol/L"
                         },
                         "high": {
                             "value": 16.0,
-                            "unit": "mmol/l",
+                            "unit": "mmol/L",
                             "system": "http://unitsofmeasure.org",
-                            "code": "mmol/l"
+                            "code": "mmol/L"
                         }
                     }
                 ]
@@ -3002,12 +2837,6 @@
                     "lastUpdated": "2023-09-11T21:01:26.376+00:00",
                     "source": "#kUgCTOgHBnZoHxzM"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:2758d846-642d-4abb-9abb-fb969a3e3ee5"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3081,12 +2910,6 @@
                     "lastUpdated": "2023-09-11T21:21:40.857+00:00",
                     "source": "#RtVdhdtFkHdkc4Oq"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:9c4c4010-43d8-4e0c-9b28-945e6ea210b1"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3161,10 +2984,6 @@
                                 }
                             ]
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:f21c46fb-6456-43ed-8af0-c0397905dfe7"
                     }
                 ],
                 "status": "final",
@@ -3316,12 +3135,6 @@
                     "lastUpdated": "2023-09-11T21:01:02.379+00:00",
                     "source": "#faHsCMrjhNdWnb34"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:300bc6ac-43ef-48ca-99c8-250d9d4adbe0"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3376,7 +3189,7 @@
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "10904000",
-                                    "display": "Staande positie"
+                                    "display": "staande positie"
                                 }
                             ]
                         }
@@ -3393,12 +3206,6 @@
                     "lastUpdated": "2023-09-11T21:01:03.378+00:00",
                     "source": "#fK3Zqt7LZ6knNamC"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:80d300fc-c5fc-4788-ba49-c836ee976fef"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3453,12 +3260,6 @@
                     "lastUpdated": "2023-09-11T21:01:04.378+00:00",
                     "source": "#fzW3q8EcihdwrizS"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:12494e2d-05b1-4041-953e-8924793ab5be"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3476,7 +3277,7 @@
                         {
                             "system": "http://loinc.org",
                             "code": "29463-7",
-                            "display": "Body weight"
+                            "display": "Lichaamsgewicht [massa]"
                         }
                     ]
                 },
@@ -3530,12 +3331,6 @@
                     "lastUpdated": "2023-09-11T21:01:17.377+00:00",
                     "source": "#gu4SkSyYs9UW16b7"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:c6e48794-94a8-400e-8041-8122ad512ff0"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3594,12 +3389,6 @@
                     "lastUpdated": "2023-09-11T21:01:19.378+00:00",
                     "source": "#7auFVMltm5o3ozHe"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:7c78abd3-59b1-40c2-a653-7e663ccf8f27"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3663,7 +3452,7 @@
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "361137007",
-                                    "display": "Onregelmatige hartslag"
+                                    "display": "onregelmatige hartslag"
                                 }
                             ]
                         }
@@ -3683,7 +3472,7 @@
                                 {
                                     "system": "http://snomed.info/sct",
                                     "code": "48867003",
-                                    "display": "Bradycardie"
+                                    "display": "bradycardie"
                                 }
                             ]
                         }
@@ -3700,12 +3489,6 @@
                     "lastUpdated": "2023-09-11T21:01:31.376+00:00",
                     "source": "#MDh6NrMn5F1Thos2"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:e64760dc-668a-4fea-8a3c-f19fc02116f0"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3774,12 +3557,6 @@
                     "lastUpdated": "2023-09-11T21:01:39.377+00:00",
                     "source": "#lDBKQwH83pqPrkRX"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Observation-urn:uuid:49c9d30b-b934-446a-a073-ca05224221cb"
-                    }
-                ],
                 "status": "final",
                 "category": [
                     {
@@ -3851,12 +3628,6 @@
                     "lastUpdated": "2023-09-11T21:02:22.596+00:00",
                     "source": "#8XT7XbXralvJipU0"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:6516896e-a9dd-4e46-9363-bf84339fccc2"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -3904,12 +3675,6 @@
                     "lastUpdated": "2023-09-11T21:02:23.597+00:00",
                     "source": "#kYb9ndUzKU7jrYsQ"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:4cb5ec89-01b2-4b11-b6f8-ce825c47e7a2"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -3965,10 +3730,6 @@
                             "type": "Condition",
                             "display": "Problem"
                         }
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:f508eef0-b7fb-44d4-9772-a17126d450db"
                     }
                 ],
                 "clinicalStatus": {
@@ -4047,12 +3808,6 @@
                     "lastUpdated": "2023-09-14T16:58:33.397+00:00",
                     "source": "#oMOnuZg0oGTL6KqE"
                 },
-                "extension": [
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Condition-urn:uuid:3b5f4025-ca4d-4790-bff2-33b15225d11c"
-                    }
-                ],
                 "clinicalStatus": {
                     "coding": [
                         {
@@ -4100,10 +3855,6 @@
                     {
                         "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
                         "valueString": "Niet-reanimerenpenning"
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Consent-urn:uuid:f5215ac3-cc5a-45b4-8ecd-ab6f23c8e3f6"
                     }
                 ],
                 "status": "active",
@@ -4183,10 +3934,6 @@
                     {
                         "url": "http://nictiz.nl/fhir/StructureDefinition/ext-Comment",
                         "valueString": "volmacht aan echtgenote"
-                    },
-                    {
-                        "url": "http://hl7.org/fhir/StructureDefinition/narrativeLink",
-                        "valueUrl": "urn:uuid:ca5bd6d6-1fff-43db-be3b-6358694e512d#Consent-urn:uuid:7a26a4ba-63e3-43f8-bd13-29cb8c995bac"
                     }
                 ],
                 "status": "active",
@@ -4257,5 +4004,6 @@
                 ]
             }
         }
-    ]
+    ],
+    "id": "c7ad7057-9209-420e-90b8-69d458b0cdea"
 }
